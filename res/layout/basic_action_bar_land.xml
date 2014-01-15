@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal" >
+
+    <!-- actionbar view control -->
+
+    <LinearLayout
+        android:id="@+id/bar_container"
+        android:layout_width="48dp"
+        android:layout_height="fill_parent"
+        android:background="@drawable/bg_titlebar_land_normal" >
+
+        <LinearLayout
+            android:id="@+id/actionbar"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <!-- 返回按钮和页面的Logo，默认是系统图标 -->
+
+            <LinearLayout
+                android:id="@+id/actionbar_back_container"
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/bg_titlebar_land"
+                android:gravity="center_vertical" >
+
+                <ImageView
+                    android:id="@+id/actionbar_back"
+                    android:layout_width="10dp"
+                    android:layout_height="16dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="2dp"
+                    android:duplicateParentState="true"
+                    android:src="@drawable/icon_arrow_left_big" />
+
+                <ImageView
+                    android:id="@+id/actionbar_logo"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:duplicateParentState="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/actionbar_buttons"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical" >
+
+                    <!-- actionbar上的title -->
+
+                    <TextView
+                        android:id="@+id/actionbar_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:textSize="16dp"
+                        android:visibility="gone" />
+                    <!-- 左边的下拉框 -->
+
+                    <com.raul.basic.android.ui.basic.spinner.DropDownSpinner
+                        android:id="@+id/left_spinner"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_title_spinner_land"
+                        android:gravity="center"
+                        android:visibility="gone" />
+
+                    <LinearLayout
+                        android:id="@+id/chat_title"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical"
+                        android:visibility="gone" >
+
+                        <ImageView
+                            android:id="@+id/chat_title_status"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:paddingBottom="4dp"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/chat_title_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center" />
+                    </LinearLayout>
+                </LinearLayout>
+                <!-- 右边的下拉框 -->
+
+                <ImageView
+                    android:id="@+id/right_spinner_separator"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:src="@drawable/line_titlebar_land"
+                    android:visibility="gone" />
+
+                <com.raul.basic.android.ui.basic.spinner.DropDownSpinner
+                    android:id="@+id/right_spinner"
+                    android:layout_width="fill_parent"
+                    android:layout_height="46.7dp"
+                    android:background="@drawable/bg_title_spinner_land"
+                    android:gravity="center"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@+id/actionbar_menu_container"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:id="@+id/menu_1_separator"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:src="@drawable/line_titlebar_land" />
+
+                    <ImageView
+                        android:id="@+id/actionbar_menu_1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="46.7dp"
+                        android:background="@drawable/bg_titlebar_land"
+                        android:scaleType="center" />
+
+                    <ImageView
+                        android:id="@+id/menu_2_separator"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:src="@drawable/line_titlebar_land" />
+
+                    <ImageView
+                        android:id="@+id/actionbar_menu_2"
+                        android:layout_width="fill_parent"
+                        android:layout_height="46.7dp"
+                        android:background="@drawable/bg_titlebar_land"
+                        android:scaleType="center" />
+
+                    <ImageView
+                        android:id="@+id/menu_more_separator"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:src="@drawable/line_titlebar_land" />
+
+                    <com.raul.basic.android.ui.basic.spinner.DropDownSpinner
+                        android:id="@+id/actionbar_menu_more"
+                        android:layout_width="fill_parent"
+                        android:layout_height="46.7dp"
+                        android:background="@drawable/bg_title_spinner_land"
+                        android:gravity="center" >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/icon_titlebar_more" />
+                    </com.raul.basic.android.ui.basic.spinner.DropDownSpinner>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/search_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone" >
+
+            <include layout="@layout/search_bar" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/mutichoice_list_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone" >
+
+            <include layout="@layout/mutichoice_list_bar" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/content_container"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+    </LinearLayout>
+
+</LinearLayout>

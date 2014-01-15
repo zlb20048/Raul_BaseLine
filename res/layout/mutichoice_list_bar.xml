@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/mutichoice_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_titlebar"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="16dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="2dp"
+            android:src="@drawable/icon_arrow_left_white_big" />
+
+        <ImageView
+            android:id="@+id/mutichoice_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:src="@drawable/icon_contact"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <!-- actionbar上的title -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <com.raul.basic.android.ui.basic.spinner.DropDownSpinner
+            android:id="@+id/choice_all"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bg_title_spinner"
+            android:gravity="center" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/mutichoice_left_menu_separator"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:src="@drawable/line_titlebar"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/mutichoice_left_menu"
+        android:layout_width="46.7dp"
+        android:layout_height="fill_parent"
+        android:background="@drawable/bg_titlebar"
+        android:scaleType="center"
+        android:visibility="gone" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:src="@drawable/line_titlebar" />
+
+    <ImageView
+        android:id="@+id/mutichoice_right_menu"
+        android:layout_width="46.7dp"
+        android:layout_height="fill_parent"
+        android:background="@drawable/bg_titlebar"
+        android:scaleType="center"
+        android:src="@drawable/btn_hook_selector" />
+
+    <com.raul.basic.android.ui.basic.spinner.DropDownSpinner
+        android:id="@+id/mutichoice_right_spinner"
+        android:layout_width="46.7dp"
+        android:layout_height="fill_parent"
+        android:background="@drawable/bg_title_spinner"
+        android:gravity="center"
+        android:visibility="gone" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/btn_hook_normal" />
+    </com.raul.basic.android.ui.basic.spinner.DropDownSpinner>
+
+</LinearLayout>

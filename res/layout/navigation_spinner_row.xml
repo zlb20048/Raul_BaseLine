@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="52dip"
+    android:gravity="center_vertical" >
+
+    <ImageView
+        android:id="@+id/navigation_spinner_image"
+        android:layout_width="20dip"
+        android:layout_height="20dip"
+        android:layout_marginBottom="16dip"
+        android:layout_marginLeft="16dip"
+        android:layout_marginRight="16dip"
+        android:layout_marginTop="16dip" />
+
+    <TextView
+        android:id="@+id/navigation_spinner_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dip"
+        android:layout_weight="1"
+        android:singleLine="true"
+        android:textColor="@color/font_black"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/navigation_spinner_sub_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dip"
+        android:textColor="@color/font_black"
+        android:textSize="20sp" />
+
+    <!-- 未读数目 -->
+
+    <TextView
+        android:id="@+id/navigation_spinner_unread_num"
+        android:layout_width="wrap_content"
+        android:layout_height="20dip"
+        android:layout_marginLeft="8dip"
+        android:layout_marginRight="16dip"
+        android:background="@drawable/bg_titlebar_tip_green"
+        android:gravity="center"
+        android:minWidth="20dip"
+        android:shadowColor="#000000"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="1"
+        android:textColor="@color/white"
+        android:textSize="12dp"
+        android:visibility="gone" />
+
+</LinearLayout>

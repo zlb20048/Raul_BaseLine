@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, TestActivity!</string>
+    <string name="app_name">RaulBaseLineTemp</string>
+    <string name="forward">Forward</string>
+    <string name="send">Send</string>
+    <string name="main_message">Main screen,Message is :</string>
+    <string name="login_message">Login screen,Message is :</string>
+    <string name="dialog_btn_ok">OK</string>
+    <string name="dialog_btn_cancel">Cancel</string>
+    <string name="prompt">Tips</string>
+    <string name="check_network">Network connection failure. Check the network service.</string>
+    <string name="wake">Remind</string>
+    <string name="cancel_app">You will not receive any messages from App.</string>
+    <string name="exit">Exit</string>
+    <string name="contact_search_hint">Name/Mobile/Email</string>
+    <string name="selected">SELECTED %d</string>
+    <string name="choose_all">Select all</string>
+    <string name="choose_none">Unselect all</string>
+    <string name="clear_all">Clear all</string>
+    <string name="file_number_unit">%s files</string>
+    <string name="pull_to_refresh_pull_label">Pull to refresh</string>
+    <string name="pull_to_refresh_update_time">Last updated: %s </string>
+    <string name="pull_to_refresh_update_time_not">No updates.</string>
+    <string name="pull_to_refresh_refreshing_default_label">Receiving…</string>
+    <string name="pull_to_refresh_refreshing_count_label">Received %1$d</string>
+    <string name="pull_to_refresh_release_label">Release to refresh</string>
+    <string name="email_get_more_from_local">LOAD MORE</string>
+    <string name="email_get_more_limit">Local emails get max number,please go to web to see more.</string>
+    <string name="email_getting_more">Loading more…</string>
+    <string name="email_all_mail">All email</string>
+    <string name="email_more_search">Search</string>
+    <string name="email_more_unread">Unread email</string>
+    <string name="email_unread">Unread emails</string>
+    <string name="email_clear_all">Clear all</string>
+    <string name="email_search_in_all">Search in all</string>
+    <string name="add_email_accounts">ADD EMAIL ACCOUNT</string>
+
+</resources>
